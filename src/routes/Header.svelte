@@ -6,7 +6,7 @@
 
 <header>
 	<div class="corner">
-		<a href="https://kit.svelte.dev">
+		<a href="https://github.com/ts-coordinator/blog">
 			<img src={logo} alt="SvelteKit" />
 		</a>
 	</div>
@@ -16,14 +16,17 @@
 			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
 		</svg>
 		<ul>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Home</a>
+			<li aria-current={$page.url.pathname === 'tenderstar' ? 'page' : undefined}>
+				<a href="https://ctyptogame.anyside.com">TenderStar</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
+			<li aria-current={$page.url.pathname === '/sidequest' ? 'page' : undefined}>
+				<a href="/sidequest">Side Quest</a>
 			</li>
-			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/sverdle">Sverdle</a>
+			<li aria-current={$page.url.pathname === '/nftplace' ? 'page' : undefined}>
+				<a href="/nftplace">NFT Place</a>
+			</li>
+			<li aria-current={$page.url.pathname.startsWith('/bloglist') ? 'page' : undefined}>
+				<a href="/bloglist">Sverdle</a>
 			</li>
 		</ul>
 		<svg viewBox="0 0 2 3" aria-hidden="true">
@@ -32,7 +35,7 @@
 	</nav>
 
 	<div class="corner">
-		<a href="https://github.com/sveltejs/kit">
+		<a href="https://github.com/ts-coordinator/blog">
 			<img src={github} alt="GitHub" />
 		</a>
 	</div>
